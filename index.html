@@ -122,7 +122,11 @@
     .track-par{position:relative;display:grid;grid-template-columns:170px 1fr;gap:16px;align-items:start;margin:22px 0 6px;padding:16px 0 0;border-top:2px dashed var(--stroke)}
     .track-par::before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--page);border:2px solid var(--stroke)}
     .track-par .track__name{display:block;margin-bottom:2px}
-    @media(max-width:900px){.track-par{grid-template-columns:1fr;gap:4px;margin-left:6px}}
+    @media(max-width:900px){.track-par{grid-template-columns:1fr;gap:4px;margin:4px 0 8px 6px;padding:0 0 4px 20px;border-top:none;border-left:2px dashed var(--stroke)}.track-par::before{top:2px;left:-7px}}
+    /* responsive fixes 2026-09 */
+    @media(max-width:1050px){.focus-grid .panel{min-height:0}}
+    @media(max-width:900px){.about-grid{grid-template-columns:1fr}}
+    @media(max-width:720px){.hero__lead br{display:none}}
     .action-links a{white-space:nowrap}
     .status{display:inline-flex;align-items:center;gap:10px;margin-top:6px;font:500 12px "IBM Plex Mono",monospace;letter-spacing:.06em;color:var(--gold)}
     .status__dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(217,175,121,.18)}
@@ -146,8 +150,8 @@
       <div class="hero__grid" aria-hidden="true"></div>
       <div class="hero__main"><div class="hero__copy">
         <div class="hero__eyebrow">SOC / CSIRT / DETECTION ENGINEERING</div>
-        <h1 id="hero-title">Understanding<br>the systems behind<br>the alert.</h1>
-        <p class="hero__lead">Detection engineering, cloud detection and incident response,<br class="desktop-break"> built, attacked and measured in the lab.</p>
+        <h1 id="hero-title">Understanding <br>the systems behind <br>the alert.</h1>
+        <p class="hero__lead">Detection engineering, cloud detection and incident response, <br class="desktop-break">built, attacked and measured in the lab.</p>
         <div class="hero__buttons">
           <a class="hero__button hero__button--light" href="#projects">VIEW PROJECTS <span aria-hidden="true">→</span></a>
           <a class="hero__button hero__button--ghost" href="#about">ABOUT ME</a>
