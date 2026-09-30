@@ -131,6 +131,16 @@
     .status{display:inline-flex;align-items:center;gap:10px;margin-top:6px;font:500 12px "IBM Plex Mono",monospace;letter-spacing:.06em;color:var(--gold)}
     .status__dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(217,175,121,.18)}
     @media(max-width:900px){.track,.track--7{grid-template-columns:1fr;gap:0;margin-left:6px}.track li{border-top:none;border-left:2px solid var(--stroke);padding:0 0 18px 20px}.track li::before{top:2px;left:-7px}.track li.is-done{border-left-color:var(--green)}}
+    /* QA 2026-09-30: phones and tablets */
+    html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+    .hero__button--ghost{-webkit-backdrop-filter:blur(5px)}
+    .hero__eyebrow{font-size:11px}
+    .track__wk{font-size:11px}
+    .hero__lead{text-shadow:0 1px 2px rgba(3,17,36,.9),0 0 10px rgba(3,17,36,.75),0 0 22px rgba(3,17,36,.5)}
+    @media(min-width:721px){.hero::before{background:linear-gradient(90deg,rgba(8,30,62,.88) 0%,rgba(11,42,84,.82) 30%,rgba(13,56,101,.62) 48%,rgba(10,54,100,.18) 66%,transparent 82%),linear-gradient(0deg,rgba(5,18,29,.30),transparent 21%)}}
+    @media(min-width:721px) and (max-height:520px){.hero{min-height:0}.hero__main{padding:36px 0 56px}.hero__copy,.hero__lead{max-width:420px}.hero__lead br{display:none}.hero__corner,.hero__est,.hero__side{display:none}.hero::before{background:linear-gradient(90deg,rgba(8,30,62,.92) 0%,rgba(11,42,84,.86) 42%,rgba(13,56,101,.55) 62%,rgba(10,54,100,.12) 80%,transparent 94%)}}
+    @media(max-width:720px){.hero__lead{font-size:13px}.nav a{align-self:stretch;padding:14px 0}}
+    @media(max-width:400px){.hero__eyebrow{font-size:10px;letter-spacing:.06em}}
   </style>
 </head>
 <body>
