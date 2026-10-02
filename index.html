@@ -194,8 +194,8 @@
         <p>A segmented SOC lab on a single workstation: an OPNsense firewall between six zones, Wazuh with Microsoft Sentinel and Splunk, phishing analysis, vulnerability management and an AI assistant that has to pass an evaluation before it acts.</p>
         <p>It is designed against a catalogue of eight ATT&amp;CK scenarios, from brute force to credential theft in Active Directory, and every phase has an exit gate that must be verified before the next one starts. A parallel cloud track covers LLMjacking in AWS.</p>
         <ol class="track track--7" aria-label="Project phases">
-          <li class="is-now"><span class="track__wk">P0</span><span class="track__name">Foundation</span><span class="track__note">Hypervisor, firewall, zones and bastion</span></li>
-          <li><span class="track__wk">P1</span><span class="track__name">Telemetry</span><span class="track__note">Wazuh, Windows and Linux endpoints</span></li>
+          <li class="is-done"><span class="track__wk">P0</span><span class="track__name">Foundation</span><span class="track__note">Hypervisor, firewall, zones and bastion</span></li>
+          <li class="is-now"><span class="track__wk">P1</span><span class="track__name">Telemetry</span><span class="track__note">Wazuh, Windows and Linux endpoints</span></li>
           <li><span class="track__wk">P2</span><span class="track__name">First SOC case</span><span class="track__note">Detection, phishing, scan and report</span></li>
           <li><span class="track__wk">P3</span><span class="track__name">Identity &amp; platforms</span><span class="track__note">AD, Entra, Sentinel and Splunk</span></li>
           <li><span class="track__wk">P4</span><span class="track__name">Network &amp; response</span><span class="track__note">Suricata, Zeek, hunting, playbooks</span></li>
@@ -206,7 +206,8 @@
           <span class="track__wk">L · PARALLEL TRACK</span>
           <div><span class="track__name">Cloud: AWS LLMjacking</span><span class="track__note">Stolen cloud credentials used to run paid AI models. Simulation with Stratus Red Team, CloudTrail and Bedrock telemetry, Sigma detections and automated response.</span></div>
         </div>
-        <div class="status"><span class="status__dot" aria-hidden="true"></span>Design complete · building P0</div>
+        <div class="status"><span class="status__dot" aria-hidden="true"></span>P0 complete · P1 next</div>
+        <div class="action-links"><a href="https://github.com/yamekuro/soc-homelab/blob/main/writeups/p0-foundation.md" target="_blank" rel="noopener noreferrer">P0 WRITE-UP ↗</a></div>
         <div class="pillrow"><span class="pill">VMWARE</span><span class="pill">OPNSENSE</span><span class="pill">WAZUH</span><span class="pill">SENTINEL</span><span class="pill">SPLUNK</span><span class="pill">AWS</span><span class="pill">TERRAFORM</span><span class="pill">CLOUDTRAIL</span><span class="pill">AMAZON BEDROCK</span><span class="pill">SIGMA</span><span class="pill">STRATUS RED TEAM</span><span class="pill">MITRE ATT&amp;CK</span></div>
       </article>
     </div></section>
